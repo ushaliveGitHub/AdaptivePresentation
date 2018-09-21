@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o1m-iT-CD8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Random View Controller-->
+        <scene sceneID="OKX-dS-9xs">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iTZ-4x-N7S" customClass="RandomViewController" customModule="AdaptivePanorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iWJ-N5-vd4"/>
+                        <viewControllerLayoutGuide type="bottom" id="on5-AL-JaH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="767-g6-mnO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kdj-6I-GmV" userLabel="Parent Stack View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-4j-M7S" userLabel="Top Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZL7-dY-jbM">
+                                                <rect key="frame" x="0.0" y="0.0" width="183.5" height="297.5"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="embed" id="8xc-uK-RWf"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjF-dC-tQZ">
+                                                <rect key="frame" x="191.5" y="0.0" width="183.5" height="297.5"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="embed" id="V9V-SZ-exs"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y1g-j6-BU2" userLabel="Bottom Stack View">
+                                        <rect key="frame" x="0.0" y="305.5" width="375" height="297.5"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMG-VI-qt0">
+                                                <rect key="frame" x="0.0" y="0.0" width="183.5" height="297.5"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="embed" id="MO6-HJ-k0b"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-DT-2pE">
+                                                <rect key="frame" x="191.5" y="0.0" width="183.5" height="297.5"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="embed" id="2en-a3-Ikr"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kdj-6I-GmV" firstAttribute="top" secondItem="iWJ-N5-vd4" secondAttribute="bottom" id="D9C-YE-eVh"/>
+                            <constraint firstItem="Kdj-6I-GmV" firstAttribute="leading" secondItem="767-g6-mnO" secondAttribute="leading" id="EhF-st-NcS"/>
+                            <constraint firstAttribute="trailing" secondItem="Kdj-6I-GmV" secondAttribute="trailing" id="GCJ-vR-ddq"/>
+                            <constraint firstItem="on5-AL-JaH" firstAttribute="top" secondItem="Kdj-6I-GmV" secondAttribute="bottom" id="qaw-42-k4i"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7W5-4q-XRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="1078"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ImageViewController" customModule="AdaptivePanorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="297.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLn-Cw-e1H" customClass="MyScrollView" customModule="AdaptivePanorama" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="183.5" height="297.5"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vcO-73-8oq"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SLn-Cw-e1H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E39-Vt-9Ub"/>
+                            <constraint firstAttribute="trailing" secondItem="SLn-Cw-e1H" secondAttribute="trailing" id="Ily-Lf-e09"/>
+                            <constraint firstAttribute="bottom" secondItem="SLn-Cw-e1H" secondAttribute="bottom" id="JF2-3D-7fM"/>
+                            <constraint firstItem="SLn-Cw-e1H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jXn-CR-8qy"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="scrollView" destination="SLn-Cw-e1H" id="CUe-lH-T6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2299" y="1176"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="iEj-QG-tJk">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FSP-RL-qei" customClass="ContainerViewController" customModule="AdaptivePanorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="453-Gt-hE7"/>
+                        <viewControllerLayoutGuide type="bottom" id="n2S-F8-X2U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8vh-qF-D59">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkM-rs-xXs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="embed" id="IUa-ze-sHK"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jkM-rs-xXs" firstAttribute="top" secondItem="453-Gt-hE7" secondAttribute="bottom" id="Nnl-RW-EjZ"/>
+                            <constraint firstItem="n2S-F8-X2U" firstAttribute="top" secondItem="jkM-rs-xXs" secondAttribute="bottom" id="c70-xv-g6b"/>
+                            <constraint firstAttribute="trailing" secondItem="jkM-rs-xXs" secondAttribute="trailing" id="lu9-91-4Dd"/>
+                            <constraint firstItem="jkM-rs-xXs" firstAttribute="leading" secondItem="8vh-qF-D59" secondAttribute="leading" id="vkf-jz-dh7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f0c-8G-9Hp">
+                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="Ay2-iT-kHD">
+                            <connections>
+                                <action selector="toggleImageMode:" destination="FSP-RL-qei" id="UaH-Rw-ISS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhg-Sg-Etr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="373"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bCh-kx-XuN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o1m-iT-CD8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mWa-k6-zzh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aJc-6a-nU5" kind="relationship" relationship="rootViewController" id="cJV-js-tv2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw0-kv-fiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="373"/>
+        </scene>
+        <!--Panoramas-->
+        <scene sceneID="Xus-RH-Ran">
+            <objects>
+                <tableViewController title="Panoramas" id="aJc-6a-nU5" customClass="ImagesTableViewController" customModule="AdaptivePanorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ypS-Ai-NEb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="Cell" textLabel="s38-Ec-Ong" style="IBUITableViewCellStyleDefault" id="Toe-7W-iZB">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Toe-7W-iZB" id="0V1-jg-6x5">
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s38-Ec-Ong">
+                                            <rect key="frame" x="16" y="0.0" width="291" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="FSP-RL-qei" kind="show" identifier="showPanoramaSegue" id="4jN-eC-noM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aJc-6a-nU5" id="eij-A6-dvd"/>
+                            <outlet property="delegate" destination="aJc-6a-nU5" id="dZD-up-hQM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Panoramas" id="Vtk-bF-iU2">
+                        <barButtonItem key="rightBarButtonItem" title="Browse Random" id="SLi-Vg-B1N">
+                            <connections>
+                                <segue destination="iTZ-4x-N7S" kind="show" identifier="randomSegue" id="8Qd-if-2Y0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0P-I4-v8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1435" y="373"/>
+        </scene>
+        <!--Photo Info View Controller-->
+        <scene sceneID="PRN-Vy-7m9">
+            <objects>
+                <viewController storyboardIdentifier="PhotoInfo" id="bIt-5d-cDF" customClass="PhotoInfoViewController" customModule="AdaptivePanorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LGA-VB-HFa"/>
+                        <viewControllerLayoutGuide type="bottom" id="D5H-na-hnQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bPi-wy-TKH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcf-22-csg">
+                                <rect key="frame" x="16" y="28" width="343" height="26"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qcf-22-csg" firstAttribute="top" secondItem="LGA-VB-HFa" secondAttribute="bottom" constant="8" id="8KV-Qc-GjU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qcf-22-csg" secondAttribute="trailing" id="U5R-yo-ujG"/>
+                            <constraint firstItem="qcf-22-csg" firstAttribute="leading" secondItem="bPi-wy-TKH" secondAttribute="leadingMargin" id="dtn-GX-bHC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="qcf-22-csg" id="dn5-Xl-rqT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0b-F7-AhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="1078"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MO6-HJ-k0b"/>
+    </inferredMetricsTieBreakers>
+</document>
